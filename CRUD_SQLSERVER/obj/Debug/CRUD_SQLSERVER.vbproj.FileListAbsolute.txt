@@ -1,0 +1,11 @@
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\CRUD_SQLSERVER.exe.config
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\CRUD_SQLSERVER.exe
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\CRUD_SQLSERVER.pdb
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\CRUD_SQLSERVER.xml
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.vbprojAssemblyReference.cache
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.Form1.resources
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.Resources.resources
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.vbproj.GenerateResource.cache
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.exe
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.xml
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.pdb
