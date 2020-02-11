@@ -22,6 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -35,12 +37,16 @@ Partial Class Form1
         Me.btn_update = New System.Windows.Forms.Button()
         Me.btn_eliminar = New System.Windows.Forms.Button()
         Me.btn_mostrar = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(115, 103)
+        Me.txtNombre.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(115, 137)
+        Me.txtNombre.MaxLength = 20
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(100, 20)
         Me.txtNombre.TabIndex = 4
@@ -48,66 +54,88 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(28, 106)
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(28, 140)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(57, 15)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Nombre"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 62)
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(28, 96)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 13)
+        Me.Label2.Size = New System.Drawing.Size(65, 15)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Identidad"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(28, 147)
+        Me.Label3.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(28, 181)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(49, 13)
+        Me.Label3.Size = New System.Drawing.Size(63, 15)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Telefono"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(28, 192)
+        Me.Label4.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(28, 226)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.Size = New System.Drawing.Size(45, 15)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Cargo"
         '
         'txtCargo
         '
-        Me.txtCargo.Location = New System.Drawing.Point(115, 192)
+        Me.txtCargo.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCargo.Location = New System.Drawing.Point(115, 226)
+        Me.txtCargo.MaxLength = 12
         Me.txtCargo.Name = "txtCargo"
         Me.txtCargo.Size = New System.Drawing.Size(100, 20)
         Me.txtCargo.TabIndex = 6
         '
         'btn_nuevo
         '
-        Me.btn_nuevo.Location = New System.Drawing.Point(42, 230)
+        Me.btn_nuevo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.btn_nuevo.BackgroundImage = Global.CRUD_SQLSERVER.My.Resources.Resource1.pen
+        Me.btn_nuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_nuevo.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_nuevo.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_nuevo.Location = New System.Drawing.Point(28, 275)
         Me.btn_nuevo.Name = "btn_nuevo"
-        Me.btn_nuevo.Size = New System.Drawing.Size(75, 23)
+        Me.btn_nuevo.Size = New System.Drawing.Size(45, 45)
         Me.btn_nuevo.TabIndex = 13
-        Me.btn_nuevo.Text = "Nuevo"
-        Me.btn_nuevo.UseVisualStyleBackColor = True
+        Me.ToolTip1.SetToolTip(Me.btn_nuevo, "Nuevo")
+        Me.btn_nuevo.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(282, 36)
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle4
+        Me.DataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.DataGridView1.Location = New System.Drawing.Point(247, 82)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(379, 265)
+        Me.DataGridView1.Size = New System.Drawing.Size(445, 252)
         Me.DataGridView1.TabIndex = 14
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(115, 144)
+        Me.txtTelefono.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono.Location = New System.Drawing.Point(115, 178)
         Me.txtTelefono.Mask = "0000-0000"
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(100, 20)
@@ -115,7 +143,8 @@ Partial Class Form1
         '
         'txtIdentidad
         '
-        Me.txtIdentidad.Location = New System.Drawing.Point(115, 59)
+        Me.txtIdentidad.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIdentidad.Location = New System.Drawing.Point(115, 93)
         Me.txtIdentidad.Mask = "0000-0000-00000"
         Me.txtIdentidad.Name = "txtIdentidad"
         Me.txtIdentidad.Size = New System.Drawing.Size(100, 20)
@@ -123,36 +152,63 @@ Partial Class Form1
         '
         'btn_update
         '
-        Me.btn_update.Location = New System.Drawing.Point(140, 230)
+        Me.btn_update.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.btn_update.BackgroundImage = Global.CRUD_SQLSERVER.My.Resources.Resource1.save
+        Me.btn_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_update.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_update.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_update.Location = New System.Drawing.Point(79, 275)
         Me.btn_update.Name = "btn_update"
-        Me.btn_update.Size = New System.Drawing.Size(75, 23)
+        Me.btn_update.Size = New System.Drawing.Size(45, 45)
         Me.btn_update.TabIndex = 15
-        Me.btn_update.Text = "Actualizar"
-        Me.btn_update.UseVisualStyleBackColor = True
+        Me.ToolTip1.SetToolTip(Me.btn_update, "Guardar")
+        Me.btn_update.UseVisualStyleBackColor = False
         '
         'btn_eliminar
         '
-        Me.btn_eliminar.Location = New System.Drawing.Point(42, 277)
+        Me.btn_eliminar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.btn_eliminar.BackgroundImage = Global.CRUD_SQLSERVER.My.Resources.Resource1.delete
+        Me.btn_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_eliminar.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_eliminar.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_eliminar.Location = New System.Drawing.Point(181, 275)
         Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_eliminar.Size = New System.Drawing.Size(45, 45)
         Me.btn_eliminar.TabIndex = 16
-        Me.btn_eliminar.Text = "Eliminar"
-        Me.btn_eliminar.UseVisualStyleBackColor = True
+        Me.ToolTip1.SetToolTip(Me.btn_eliminar, "Borrar")
+        Me.btn_eliminar.UseVisualStyleBackColor = False
         '
         'btn_mostrar
         '
-        Me.btn_mostrar.Location = New System.Drawing.Point(140, 277)
+        Me.btn_mostrar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.btn_mostrar.BackgroundImage = Global.CRUD_SQLSERVER.My.Resources.Resource1.refresh
+        Me.btn_mostrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_mostrar.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_mostrar.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_mostrar.Location = New System.Drawing.Point(130, 275)
         Me.btn_mostrar.Name = "btn_mostrar"
-        Me.btn_mostrar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_mostrar.Size = New System.Drawing.Size(45, 45)
         Me.btn_mostrar.TabIndex = 17
-        Me.btn_mostrar.Text = "Mostrar"
-        Me.btn_mostrar.UseVisualStyleBackColor = True
+        Me.ToolTip1.SetToolTip(Me.btn_mostrar, "Refrescar")
+        Me.btn_mostrar.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Lucida Sans", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(228, 27)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(271, 27)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Registro de personas"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(723, 330)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(714, 351)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btn_mostrar)
         Me.Controls.Add(Me.btn_eliminar)
         Me.Controls.Add(Me.btn_update)
@@ -186,4 +242,6 @@ Partial Class Form1
     Friend WithEvents btn_update As Button
     Friend WithEvents btn_eliminar As Button
     Friend WithEvents btn_mostrar As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

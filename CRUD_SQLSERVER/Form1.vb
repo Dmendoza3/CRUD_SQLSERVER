@@ -56,7 +56,12 @@ Public Class Form1
 
     Public Function HasException(Optional Report As Boolean = False) As Boolean
         If String.IsNullOrEmpty(Exception) Then Return False
-        If Report = True Then MsgBox(Exception, MsgBoxStyle.Critical, "Exception:")
+        If Report = True Then
+            If InStr(Exception, "Violation of PRIMARY KEY constraint") Then
+                Exception = "Un registro con esa identidad ya existe. No se creo el registro."
+            End If
+            MsgBox(Exception, MsgBoxStyle.Critical, "Exception:")
+        End If
         Return True
     End Function
 
@@ -65,6 +70,10 @@ Public Class Form1
         Dim identidad As String = txtIdentidad.Text
         Dim telefono As String = txtTelefono.Text
         Dim cargo As String = txtCargo.Text
+
+        If String.IsNullOrWhiteSpace(Replace(nombre + identidad + telefono + cargo, "-", "")) Then
+            MsgBox("Algunos de los campos esta vacio.", MsgBoxStyle.DefaultButton1, "Error al crear dato.")
+        End If
 
         ExecQuery("INSERT into dbo.Personas (Nombre, Identidad, Telefono, Cargo) VALUES ('" & nombre & "', '" & identidad & "', '" & telefono & "', '" & cargo & "');")
         If HasException(True) Then Exit Sub

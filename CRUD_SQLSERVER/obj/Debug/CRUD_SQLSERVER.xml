@@ -22,6 +22,42 @@ CRUD_SQLSERVER
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:CRUD_SQLSERVER.My.Resources.Resource1">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CRUD_SQLSERVER.My.Resources.Resource1.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CRUD_SQLSERVER.My.Resources.Resource1.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CRUD_SQLSERVER.My.Resources.Resource1.delete">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CRUD_SQLSERVER.My.Resources.Resource1.pen">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CRUD_SQLSERVER.My.Resources.Resource1.refresh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CRUD_SQLSERVER.My.Resources.Resource1.save">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="T:CRUD_SQLSERVER.masterDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.
