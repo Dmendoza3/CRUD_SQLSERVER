@@ -39,6 +39,7 @@ Public Class Form1
     End Sub
 
     Public Sub ShowTable()
+        PersonasBindingSource.DataSource = context.Personas.ToList()
     End Sub
 
     Public Sub EmptyTextboxes()
@@ -125,5 +126,9 @@ Public Class Form1
         txtNombre.Text = DataGridView1.Rows(e.RowIndex).Cells(1).Value
         txtTelefono.Text = DataGridView1.Rows(e.RowIndex).Cells(2).Value
         txtCargo.Text = DataGridView1.Rows(e.RowIndex).Cells(3).Value
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PersonasBindingSource.DataSource = context.Personas.ToList()
     End Sub
 End Class
