@@ -3,40 +3,6 @@
 Public Class Form1
     Dim context As CRUD_SQLSERVER.PersonasModel = New PersonasModel
 
-    Dim connection As New SqlConnection("Server=localhost\SQLEXPRESS;Database=CRUDDB;Trusted_Connection=True;")
-    Dim cmd As SqlCommand
-
-    'Data
-    Public dbda As SqlDataAdapter
-    Public dbdt As DataTable
-
-    Public params As New List(Of SqlParameter)
-
-    Public recordCount As Integer
-    Public Exception As String
-
-    Public Sub ExecQuery(Query As String)
-        recordCount = 0
-        Exception = ""
-        Try
-            connection.Open()
-
-            cmd = New SqlCommand(Query, connection)
-
-            params.ForEach(Sub(p) cmd.Parameters.Add(p))
-
-            params.Clear()
-
-            dbdt = New DataTable
-            dbda = New SqlDataAdapter(cmd)
-            recordCount = dbda.Fill(dbdt)
-        Catch ex As Exception
-            Exception = "Error: " & vbCrLf & ex.Message
-        Finally
-
-            If connection.State = ConnectionState.Open Then connection.Close()
-        End Try
-    End Sub
 
     Public Sub ShowTable()
         PersonasBindingSource.DataSource = context.Personas.ToList()
@@ -49,21 +15,6 @@ Public Class Form1
         txtCargo.Text = ""
     End Sub
 
-    Public Sub addParam(Name As String, Value As Object)
-        Dim newParam As New SqlParameter(Name, Value)
-        params.Add(newParam)
-    End Sub
-
-    Public Function HasException(Optional Report As Boolean = False) As Boolean
-        If String.IsNullOrEmpty(Exception) Then Return False
-        If Report = True Then
-            If InStr(Exception, "Violation of PRIMARY KEY constraint") Then
-                Exception = "Un registro con esa identidad ya existe. No se creo el registro."
-            End If
-            MsgBox(Exception, MsgBoxStyle.Critical, "Exception:")
-        End If
-        Return True
-    End Function
 
     Private Sub btn_nuevo_Click(sender As Object, e As EventArgs) Handles btn_nuevo.Click
         Dim temp As Personas = New Personas
