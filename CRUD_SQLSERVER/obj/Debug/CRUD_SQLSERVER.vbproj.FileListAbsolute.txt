@@ -10,3 +10,8 @@ C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSE
 C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.xml
 C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.pdb
 C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.Resource1.resources
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\EntityFramework.dll
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\EntityFramework.xml
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dario Mendoza\Documents\GitHub\CRUD_SQLSERVER\CRUD_SQLSERVER\CRUD_SQLSERVER\obj\Debug\CRUD_SQLSERVER.vbproj.CopyComplete
